@@ -27,16 +27,14 @@ jobs:
     # Generate html from json
     # Pass in auto_generated access token from github actions
     - name: Generate html
-      run: |
-        python3 --version
-        python3 ./scripts/generate_html.py
+      run: python3 ./scripts/generate_html.py
 
     # Commits all changes to the repo
+    # "echo" returns true so the build succeeds, even if no changed files
     - name: Commit to the repo
       run: |
         git config --global user.name "danielkilgallon/minecraft_wiki"
         git config --global user.email "json-to-html[bot]@danielkilgallon.github.io"
         git add .
-    # "echo" returns true so the build succeeds, even if no changed files
         git commit -m 'Update generated files' || echo
         git push
