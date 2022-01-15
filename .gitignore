@@ -1,5 +1,7 @@
-node_modules
 meeting_notes
 package-lock.json
+
+# directories
 generated-html/
 __pycache__/
+node_modules/
