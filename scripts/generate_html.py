@@ -32,7 +32,7 @@ def main() -> None:
         output = re.sub(constants.DESC_REPLACE, item['description'], output)
 
         output = replace_images(output, item['image_paths'])
-        with open(constants.OUTPUT_DIR+"/generated.html", "w") as f:
+        with open(constants.OUTPUT_DIR+"/"+item['title'] + ".html", "w") as f:
             f.write(output)
 
 if __name__ == "__main__":

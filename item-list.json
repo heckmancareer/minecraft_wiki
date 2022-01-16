@@ -13,5 +13,14 @@
             "images/sep-recipe.png",
             "images/sep-use.gif"
         ]
+    },
+    {
+        "title": "Super Lubricent Boots",
+        "description": "Super slippery boots.",
+        "keywords": [
+            "Super",
+            "Lubricet"
+        ],
+        "image_paths": []
     }
 ]
