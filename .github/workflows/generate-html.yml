@@ -24,6 +24,11 @@ jobs:
         python-version: '3.8'
         architecture: 'x64'
 
+    - name: Clean directory
+      run: |
+        rm -r generated-html || echo
+        mkdir generated-html
+
     # Generate html from json
     # Pass in auto_generated access token from github actions
     - name: Generate html
@@ -36,5 +41,5 @@ jobs:
         git config --global user.name "danielkilgallon/minecraft_wiki"
         git config --global user.email "json-to-html[bot]@danielkilgallon.github.io"
         git add .
-        git commit -m 'Update generated files' || echo
+        git commit -m 'Update generated html' || echo
         git push
