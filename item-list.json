@@ -16,10 +16,12 @@
     },
     {
         "title": "Super Lubricent Boots",
-        "description": "Super slippery boots.",
+        "description": "Super slippery boots",
         "keywords": [
             "Super",
-            "Lubricet"
+            "Lubricent",
+            "Armor",
+            "Boots"
         ],
         "image_paths": []
     }
