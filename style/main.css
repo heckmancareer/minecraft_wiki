@@ -1,0 +1,56 @@
+:root {
+    font-size: 18px;
+    --sidebar-background-color: #0d47a1;
+    --sidebar-icon-color: #00bcd4;
+}
+
+body {
+    min-width: 320px;
+}
+
+.master-container {
+    display: flex;
+}
+
+.sidebar-component {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 8px;
+    color: white;
+    background: var(--sidebar-background-color);
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-component .sidebar-title {
+    display: flex;
+    font-weight: 600;
+    font-size: 1.75em;
+}
+
+.sidebar-component .sidebar-title svg {
+    width: 40px;
+    margin-right: 6px;
+    color: var(--sidebar-icon-color)
+}
+
+@media only screen and (min-width: 640px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+}
