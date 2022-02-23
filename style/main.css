@@ -45,6 +45,7 @@ body {
     height: 75px;
     display: flex;
     position: absolute;
+    z-index: 1;
 
     background-color: var(--sidebar-background-color);
     font-family: 'Poppins', sans-serif;
@@ -67,13 +68,15 @@ body {
 
 .sidebar-component {
     position: absolute;
-    left: -320px;
     top: 0;
     width: 300px;
     height: 100%;
     padding: 8px;
     color: white;
     background: var(--sidebar-background-color);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
@@ -117,10 +120,19 @@ body {
     font-size: 1.25em;
     border-radius: 0.35em;
     border: 1px solid var(--sidebar-search-field-border);
+    width: 100%;
+}
+
+.sidebar-component .sidebar-search-line {
+    display: flex;
+}
+
+.sidebar-component .sidebar-search-line svg {
+    width: 42px;
 }
 
 .sidebar-component .sidebar-title {
-    display: flex;
+    display: none;
     font-weight: 600;
     font-size: 1.75em;
 }
@@ -129,6 +141,34 @@ body {
     width: 40px;
     margin-right: 6px;
     color: var(--sidebar-icon-color)
+}
+
+.sidebar-component-slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.sidebar-component-slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
 }
 
 @media only screen and (min-width: 640px) {
@@ -143,8 +183,18 @@ body {
     .mobile-banner-component {
         visibility: hidden;
     }
+
     .sidebar-component {
-        left: 0px;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
+    .sidebar-component .sidebar-title {
+        display: flex;
+    }
+
+    .sidebar-component .sidebar-search-line svg {
+        display: none;
     }
 
 }

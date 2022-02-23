@@ -24,8 +24,13 @@
           </svg>
           Random Things
         </div>
-        <input type="text" id="search-field" class="sidebar-search-field" name="name" placeholder="Search..."
-          minlength="4" maxlength="8" size="10">
+        <div class="sidebar-search-line">
+          <svg xmlns="http://www.w3.org/2000/svg" id="close-sidebar" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          <input type="text" id="search-field" class="sidebar-search-field" name="name" placeholder="Search..."
+            minlength="4" maxlength="8" size="10">
+        </div>
         <div class="sidebar-item-list">
           <div class="sidebar-header-item">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -58,12 +63,12 @@
         </div>
       </div>
       <div class="mobile-banner-component">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg"  id="open-sidebar" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
         <span>Random Things</span>
       </div>
     </div>
-    <script src="" async defer></script>
+    <script src="../js/main.js" async defer></script>
   </body>
 </html>
