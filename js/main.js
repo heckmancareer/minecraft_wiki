@@ -21,3 +21,21 @@ function removeMobileSidebarClasses() {
     sidebar.classList.remove("sidebar-component-slide-out");
     sidebar.classList.remove("sidebar-component-slide-in");
 }
+
+function openModalWithPicture(image) {
+    let modalPicture = document.getElementById("modal-picture")
+    modalPicture.src = image.src;
+    document.getElementById("modal").addEventListener("click", hideModal);
+    displayModal();
+}
+
+function displayModal() {
+    let modal = document.getElementById("modal");
+    modal.style.display = "flex";
+}
+
+function hideModal() {
+    let modal = document.getElementById("modal");
+    modal.style.display = "none";
+    modal.removeEventListener("click", hideModal);
+}
