@@ -12,7 +12,8 @@
         "image_paths": [
             "images/sep-recipe.png",
             "images/sep-use.gif"
-        ]
+        ],
+        "category": "Item"
     },
     {
         "title": "Super Lubricent Boots",
@@ -23,6 +24,7 @@
             "Armor",
             "Boots"
         ],
-        "image_paths": []
+        "image_paths": [],
+        "category": "Armor"
     }
 ]
