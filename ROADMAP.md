@@ -4,3 +4,4 @@ When you view the page using a Chromebook, the font under the Items tab is messe
 
 Next Steps:
 Dan: Get recipe ingredient images into folder, make sure they are consistent sizes.
+Nick: Migrate index.html to template.html and implemenet the constants from constants.py
