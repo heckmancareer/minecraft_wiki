@@ -32,7 +32,9 @@ jobs:
     # Generate html from json
     # Pass in auto_generated access token from github actions
     - name: Generate html
-      run: python3 ./scripts/generate_html.py
+      run: 
+        pip install beautifulsoup4
+        python3 ./scripts/generate_html.py
 
     # Commits all changes to the repo
     # "echo" returns true so the build succeeds, even if no changed files
