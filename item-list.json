@@ -25,6 +25,103 @@
             "Boots"
         ],
         "image_paths": [],
+        "category": "Armor"
+    },
+    {
+        "title": "Water Walking Boots",
+        "description": "Allows you to walk on water! Press Shift to go below the surface",
+        "keywords": [
+            "Water",
+            "Armor",
+            "Boots"
+        ],
+        "image_paths": [],
+        "category": "Armor"
+    },
+    {
+        "title": "Bean",
+        "description": "A beautiful, delicious bean",
+        "keywords": [
+            "Ingredient",
+            "Bean"
+        ],
+        "image_paths": [],
         "category": "Item"
+    },
+    {
+        "title": "Ectoplasm",
+        "description": "Dropped from Spirits when killed. Used to create Spectre items",
+        "keywords": [
+            "Ectoplasm",
+            "Spectre",
+            "Spirit"
+        ],
+        "image_paths": [],
+        "category": "Item"
+    },
+    {
+        "title": "Position Filter",
+        "description": "Stores the XYZ coordinates of a block when right clicked. Highlights bound block in purple.",
+        "keywords": [
+            "Position",
+            "Filter"
+        ],
+        "image_paths": [],
+        "category": "Item"
+    },
+    {
+        "title": "Redstone Activator",
+        "description": "Creates a redstone signal on a block when right clicked.",
+        "keywords": [
+            "Redstone",
+            "Activator",
+            "Signal"
+        ],
+        "image_paths": [],
+        "category": "Item"
+    },
+    {
+        "title": "Spectre Key",
+        "description": "Key to the Spectre Dimension.",
+        "keywords": [
+            "Spectre",
+            "Key",
+            "Dimension"
+        ],
+        "image_paths": [],
+        "category": "Item"
+    },
+    {
+        "title": "Super Lubricent",
+        "description": "Super slippery oil",
+        "keywords": [
+            "Super",
+            "Lubricent",
+            "Bean"
+        ],
+        "image_paths": [],
+        "category": "Item"
+    },
+    {
+        "title": "Weather Egg",
+        "description": "When thrown, will create whatever weather effect the egg has: Clear, Rain, Storm",
+        "keywords": [
+            "Weather",
+            "Egg",
+            "Throwable"
+        ],
+        "image_paths": [],
+        "category": "Item"
+    },
+    {
+        "title": "Super Lubricent Stone",
+        "description": "Super slippery stone, when an entity moves on this, it lose all friction",
+        "keywords": [
+            "Super",
+            "Lubricent",
+            "Stone"
+        ],
+        "image_paths": [],
+        "category": "Block"
     }
 ]
